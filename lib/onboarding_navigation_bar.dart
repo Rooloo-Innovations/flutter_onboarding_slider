@@ -37,7 +37,7 @@ class OnBoardingNavigationBar extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
-    return CupertinoNavigationBar(
+    return AppBar(
       automaticallyImplyLeading: false,
       leading: leading,
       middle: middle,
@@ -72,6 +72,7 @@ class OnBoardingNavigationBar extends StatelessWidget
         bottom: BorderSide(color: Colors.transparent),
       ),
       backgroundColor: headerBackgroundColor,
+      elevation: 0,
     );
   }
 }
