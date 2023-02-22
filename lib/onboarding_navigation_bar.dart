@@ -66,10 +66,10 @@ class OnBoardingNavigationBar extends StatelessWidget
                     },
                     child: skipTextButton!,
                   ),
-                ),]
+                )],
 
       backgroundColor: headerBackgroundColor,
-      elevation: 0,
+      elevation: 0
     );
   }
 }
