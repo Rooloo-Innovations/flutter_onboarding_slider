@@ -42,18 +42,18 @@ class OnBoardingNavigationBar extends StatelessWidget
       leading: leading,
       actions: currentPage == totalPage - 1
           ? finishButton == null
-              ? SizedBox.shrink()
-              : Container(
+              ? [SizedBox.shrink()]
+              : [Container(
                   color: Colors.transparent,
                   alignment: Alignment.centerRight,
                   child: TextButton(
                     onPressed: () => onFinish?.call(),
                     child: finishButton!,
-                  ),
+                  ),]
                 )
           : skipTextButton == null
               ? SizedBox.shrink()
-              : Container(
+              : [Container(
                   color: Colors.transparent,
                   alignment: Alignment.centerRight,
                   child: TextButton(
@@ -66,7 +66,7 @@ class OnBoardingNavigationBar extends StatelessWidget
                     },
                     child: skipTextButton!,
                   ),
-                ),
+                ),]
 
       backgroundColor: headerBackgroundColor,
       elevation: 0,
