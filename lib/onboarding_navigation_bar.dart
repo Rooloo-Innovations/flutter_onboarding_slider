@@ -52,7 +52,7 @@ class OnBoardingNavigationBar extends StatelessWidget
                   )
                 ),]
           : skipTextButton == null
-              ? SizedBox.shrink()
+              ? [SizedBox.shrink()]
               : [Container(
                   color: Colors.transparent,
                   alignment: Alignment.centerRight,
