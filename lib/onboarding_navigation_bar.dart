@@ -40,7 +40,7 @@ class OnBoardingNavigationBar extends StatelessWidget
     return AppBar(
       automaticallyImplyLeading: false,
       leading: leading,
-      trailing: currentPage == totalPage - 1
+      action: currentPage == totalPage - 1
           ? finishButton == null
               ? SizedBox.shrink()
               : Container(
