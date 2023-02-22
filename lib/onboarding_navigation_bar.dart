@@ -37,6 +37,12 @@ class OnBoardingNavigationBar extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
+     if(headerBackgroundColor == Colors.transparent)
+      {
+        return Container();
+      }
+    else
+      {
     return AppBar(
       automaticallyImplyLeading: false,
       leading: leading,
@@ -71,5 +77,6 @@ class OnBoardingNavigationBar extends StatelessWidget
       backgroundColor: headerBackgroundColor,
       elevation: 0
     );
+      }
   }
 }
