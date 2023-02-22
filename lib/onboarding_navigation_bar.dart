@@ -49,8 +49,8 @@ class OnBoardingNavigationBar extends StatelessWidget
                   child: TextButton(
                     onPressed: () => onFinish?.call(),
                     child: finishButton!,
-                  ),]
-                )
+                  )
+                ),]
           : skipTextButton == null
               ? SizedBox.shrink()
               : [Container(
