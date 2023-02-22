@@ -67,9 +67,7 @@ class OnBoardingNavigationBar extends StatelessWidget
                     child: skipTextButton!,
                   ),
                 ),
-      border: Border(
-        bottom: BorderSide(color: Colors.transparent),
-      ),
+
       backgroundColor: headerBackgroundColor,
       elevation: 0,
     );
