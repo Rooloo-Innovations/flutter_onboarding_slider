@@ -37,13 +37,36 @@ class OnBoardingNavigationBar extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
-     if(headerBackgroundColor == Colors.transparent)
+       if(headerBackgroundColor == Colors.transparent)
       {
-        return Container();
+        return AppBar(
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Color.fromRGBO(223, 247, 250, 1),
+                  Color.fromRGBO(186, 233, 239, 1),
+                ],
+                stops: [0.5, 1.0],
+              ),
+            ),
+          ),
+        );
       }
     else
       {
     return AppBar(
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color.fromRGBO(223, 247, 250, 1),
+                Color.fromRGBO(186, 233, 239, 1),
+              ],
+              stops: [0.5, 1.0],
+            ),
+          ),
+        ),
       automaticallyImplyLeading: false,
       leading: leading,
       actions: currentPage == totalPage - 1
