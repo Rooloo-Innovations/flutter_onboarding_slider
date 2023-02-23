@@ -118,8 +118,9 @@ class OnBoardingSlider extends StatefulWidget {
     this.hasFloatingButton = true,
     this.hasSkip = true,
     this.finishButtonTextStyle = const TextStyle(
-      fontSize: 20,
+           fontSize: 16,
       color: Colors.white,
+      fontWeight: FontWeight.w600
     ),
     this.skipIcon = const Icon(
       Icons.arrow_forward,
