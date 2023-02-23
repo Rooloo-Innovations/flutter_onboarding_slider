@@ -64,7 +64,7 @@ class BackgroundFinalButton extends StatelessWidget {
                 width: MediaQuery.of(context).size.width - 30,
                 child: FloatingActionButton.extended(
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(5.0))),
+                      borderRadius: BorderRadius.all(Radius.circular(40.0))),
                   onPressed: () => onPageFinish?.call(),
                   elevation: 0,
                   label: buttonText == null
