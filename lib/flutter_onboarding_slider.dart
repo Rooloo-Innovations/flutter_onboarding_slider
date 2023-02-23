@@ -165,18 +165,7 @@ class _OnBoardingSliderState extends State<OnBoardingSlider> {
               )
             : SizedBox.shrink(),
         body: CupertinoPageScaffold(
-          navigationBar: OnBoardingNavigationBar(
-            skipFunctionOverride: widget.skipFunctionOverride,
-            leading: widget.leading,
-            middle: widget.middle,
-            totalPage: widget.totalPage,
-            currentPage: _currentPage,
-            onSkip: _onSkip,
-            headerBackgroundColor: widget.headerBackgroundColor,
-            onFinish: widget.trailingFunction,
-            finishButton: widget.trailing,
-            skipTextButton: widget.skipTextButton,
-          ),
+
           child: Container(
             height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
